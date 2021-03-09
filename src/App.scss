@@ -1,0 +1,28 @@
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#landing {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background: radial-gradient(ellipse at bottom, #1b2735 0, #090a0f 100%);
+  text-align: center;
+  overflow: hidden;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding-bottom: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
