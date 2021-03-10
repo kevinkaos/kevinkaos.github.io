@@ -1,11 +1,15 @@
-import React from "react";
-import "./App.scss";
-import Landing from "./components/Landing";
+import React from 'react';
+import './App.scss';
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
 
 const App = () => {
   return (
     <div>
-      <Landing />
+      <Home />
+      <About />
+      <Skills />
     </div>
   );
 };
