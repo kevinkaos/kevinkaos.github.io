@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/stars.scss';
 import Typical from 'react-typical';
-import { Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import resume from '../assets/KevinKaoResume.pdf';
 
