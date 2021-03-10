@@ -104,6 +104,106 @@ html {
   }
 }
 
+#portfolio {
+  background: #efe1bd;
+  padding-bottom: 5%;
+
+  .portfolio-item {
+    max-width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+
+    .foto {
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      div {
+        background: #fff;
+        display: inline-block;
+        margin: 0 auto 5% auto;
+        padding: 10px 10px 5px;
+        text-align: center;
+        text-decoration: none;
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        z-index: 0;
+        position: relative;
+
+        &::after {
+          color: #333;
+          font-size: 25px;
+          content: attr(title);
+          position: relative;
+          top: 15px;
+        }
+
+        &:hover {
+          -webkit-transform: scale(1.01);
+          -moz-transform: scale(1.01);
+          transform: scale(1.01);
+          z-index: 10;
+          -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+          -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+
+    .project-title-settings {
+      margin-top: 5%;
+      font: 18px/24px 'opensans-bold', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: black;
+      text-align: center;
+    }
+
+    .project-date {
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 8px 15px 2px 15px;
+      position: relative;
+      z-index: -500;
+      border-top: 5px solid #696969;
+      border-radius: 0 0 5px 5px;
+      background-color: #696969;
+      color: white;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .closeButtonResponsive {
+      display: block;
+    }
+
+    .portfolio-item {
+      margin-bottom: 30px;
+    }
+  }
+
+  .portfolio-item-caption {
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    opacity: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .portfolio-item-caption-content {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 #footer {
   background: #1f1f1f;
   min-height: 100px;
