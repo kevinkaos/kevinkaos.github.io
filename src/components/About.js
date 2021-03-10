@@ -29,6 +29,7 @@ const About = () => {
                 >
                   {[...Array(5)].map((_, i) => (
                     <div
+                      key={i}
                       data-src={`img/my-pics/profile-pic-${i}.jpg`}
                       alt="Avatar placeholder"
                     />
@@ -83,15 +84,19 @@ const About = () => {
                   <br />
                   <span className="wave">Hi!!</span>
                   <br />
-                  <br />A tenacious self-taught programmer.
-                  Believer of hard work, passionate and
-                  always moving forward. Seeking
-                  opportunities in front end development.
-                  Like many other people I enjoy spending my
-                  free time increasing my knowledge of Web
-                  Development and building new and
-                  challenging projects...and gaming when I
-                  have the time :P
+                  <br />
+                  Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Dicta qui saepe alias
+                  non vel autem quis, inventore at culpa
+                  adipisci. Neque quia fugit porro
+                  exercitationem molestias minima animi eos
+                  ea?Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Voluptatem consequatur
+                  perferendis voluptatum fugiat tenetur
+                  animi sint laborum maiores sunt aliquid
+                  sit inventore similique, aspernatur vel
+                  facilis quasi dolores reprehenderit
+                  mollitia.
                 </div>
               </div>
             </div>
