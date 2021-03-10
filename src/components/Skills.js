@@ -16,6 +16,10 @@ const skillsList = {
         class: 'devicon-react-original-wordmark colored',
       },
       {
+        name: 'Redux',
+        class: 'devicon-redux-original colored',
+      },
+      {
         name: 'JavaScript',
         class: 'devicon-javascript-plain colored',
       },

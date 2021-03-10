@@ -10,6 +10,12 @@ const social = {
         class: 'fab fa-github',
       },
       {
+        name: 'linkedin',
+        url:
+          'https://www.linkedin.com/in/kevin-kao-815b81124/',
+        class: 'fab fa-linkedin',
+      },
+      {
         name: 'instagram',
         url: 'https://www.instagram.com/kev1n_moo/',
         class: 'fab fa-instagram',

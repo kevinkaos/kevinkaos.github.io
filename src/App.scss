@@ -67,14 +67,8 @@ html {
   }
 
   .polaroid {
-    img {
+    > span {
       display: block;
-      max-width: 200px;
-    }
-
-    span {
-      background: #fff;
-      display: inline-block;
       margin: 55px 75px 30px;
       padding: 15px 15px 30px;
       text-align: center;
@@ -87,6 +81,26 @@ html {
       transition: all 0.2s linear;
       z-index: 0;
       position: relative;
+    }
+
+    .profile-pic {
+      .awssld__wrapper {
+        .awssld__container {
+          height: 252px;
+
+          @media screen and (max-width: 375px) {
+            height: 180px;
+          }
+
+          .awssld__box {
+            .awssld__content {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
     }
   }
 

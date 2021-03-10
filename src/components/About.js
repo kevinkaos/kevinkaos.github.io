@@ -2,6 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+import coreStyles from 'react-awesome-slider/src/core/styles.scss';
+import animationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
 
 const About = () => {
   return (
@@ -17,11 +21,19 @@ const About = () => {
           <div className="col-md-4 mb-5 center">
             <div className="polaroid">
               <span style={{ cursor: 'auto' }}>
-                <img
-                  height="250px"
-                  src="img/profile-pic.jpg"
-                  alt="Avatar placeholder"
-                />
+                <AwesomeSlider
+                  className="profile-pic"
+                  bullets={false}
+                  animation="cubeAnimation"
+                  cssModule={[coreStyles, animationStyles]}
+                >
+                  {[0, 1, 2, 3, 4].map((i) => (
+                    <div
+                      data-src={`img/my-pics/profile-pic-${i}.jpg`}
+                      alt="Avatar placeholder"
+                    />
+                  ))}
+                </AwesomeSlider>
                 <div className="centered mt-4 justify-content-evenly">
                   <FontAwesomeIcon
                     size="4x"
@@ -30,7 +42,11 @@ const About = () => {
                   />
                   <i
                     style={{ fontSize: '3.5rem' }}
-                    className="devicon-vuejs-plain colored"
+                    className="devicon-redux-original colored"
+                  ></i>
+                  <i
+                    style={{ fontSize: '4.5rem' }}
+                    className="devicon-nodejs-plain-wordmark colored"
                   ></i>
                 </div>
               </span>

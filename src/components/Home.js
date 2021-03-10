@@ -32,15 +32,6 @@ const Home = () => {
             wrapper="h1"
             className="intro-titles"
           />
-          <p className="pt-3">
-            <a
-              className="btn btn-primary btn js-scroll px-4"
-              href="#work"
-              role="button"
-            >
-              View My Work
-            </a>
-          </p>
         </div>
       </div>
     </div>
