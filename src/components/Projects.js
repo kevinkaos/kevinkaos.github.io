@@ -119,7 +119,9 @@ const Projects = () => {
     <section id="portfolio">
       <div className="col-md-12">
         <h1 className="section-title text-black">
-          <span>My Projects</span>
+          <span style={{ color: 'black' }}>
+            My Projects
+          </span>
         </h1>
         <div className="col-md-12 mx-auto">
           <div className="row mx-auto">{projects}</div>

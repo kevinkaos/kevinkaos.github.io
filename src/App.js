@@ -6,10 +6,12 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Experiences from './components/Experiences';
+import Header from './components/Header';
 
 const App = () => {
   return (
     <div>
+      <Header />
       <Home />
       <About />
       <Skills />

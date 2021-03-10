@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/stars.scss';
 import Typical from 'react-typical';
+import { Row } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import resume from '../assets/KevinKaoResume.pdf';
 
 const Home = () => {
   return (
@@ -20,7 +23,7 @@ const Home = () => {
       >
         <div className="col-md-12">
           <i
-            class="devicon-react-original"
+            className="devicon-react-original"
             style={{ fontSize: '10rem', color: 'white' }}
           ></i>
           <br />
@@ -28,8 +31,12 @@ const Home = () => {
           <Typical
             steps={['Front-End Web Developer']}
             wrapper="h1"
-            className="intro-titles"
+            className="intro-titles mb-4"
           />
+          <Button href={resume} target="_blank">
+            <i className="fas fa-download">&nbsp;</i>
+            Download My CV
+          </Button>
         </div>
       </div>
     </div>

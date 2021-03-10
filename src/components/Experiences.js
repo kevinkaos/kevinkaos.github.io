@@ -132,7 +132,7 @@ const Experiences = () => {
   });
 
   return (
-    <section id="resume" className="pb-5">
+    <section id="resume">
       <div className="col-md-12 mx-auto">
         <div className="col-md-12">
           <h1
