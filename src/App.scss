@@ -5,6 +5,10 @@ html {
   padding: 0;
 }
 
+.awssld__content > img {
+  object-fit: contain !important;
+}
+
 .centered {
   display: flex;
   align-items: center;

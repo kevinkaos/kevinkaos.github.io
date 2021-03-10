@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
+import ProjectDetails from './ProjectDetails';
 
 const myProjects = {
   projects: [
@@ -8,13 +9,13 @@ const myProjects = {
       description:
         'movie recommendations rwd design using Create react app',
       images: [
-        'img/projects/0.png',
-        'img/projects/1.png',
-        'img/projects/2.png',
-        'img/projects/3.png',
-        'img/projects/4.png',
-        'img/projects/5.png',
-        'img/projects/6.png',
+        'img/movie-recommendations/0.png',
+        'img/movie-recommendations/1.png',
+        'img/movie-recommendations/2.png',
+        'img/movie-recommendations/3.png',
+        'img/movie-recommendations/4.png',
+        'img/movie-recommendations/5.png',
+        'img/movie-recommendations/6.png',
       ],
       url:
         'https://kkao-movie-recommendation.herokuapp.com/',
@@ -24,8 +25,33 @@ const myProjects = {
           name: 'React',
         },
         {
+          class: 'devicon-redux-original colored',
+          name: 'Redux',
+        },
+        {
           class: 'devicon-sass-original colored',
           name: 'Sass',
+        },
+      ],
+    },
+    {
+      title: 'Movie Finder',
+      startDate: '2019',
+      description: 'movie finder app',
+      images: [
+        'img/movie-finder/0.png',
+        'img/movie-finder/1.png',
+        'img/movie-finder/2.png',
+      ],
+      url: 'https://kkao-movie-finder.herokuapp.com/',
+      technologies: [
+        {
+          class: 'devicon-react-original-wordmark colored',
+          name: 'React',
+        },
+        {
+          class: 'devicon-redux-original colored',
+          name: 'Redux',
         },
       ],
     },
@@ -33,6 +59,10 @@ const myProjects = {
 };
 
 const Projects = () => {
+  const [isShowModal, setIsShowModal] = useState(false);
+  const dataRef = useRef();
+  const closeModal = () => setIsShowModal(false);
+
   const projects = myProjects.projects.map((project) => (
     <div
       className="col-sm-12 col-md-6 col-lg-4"
@@ -40,17 +70,19 @@ const Projects = () => {
       style={{ cursor: 'pointer' }}
     >
       <span className="portfolio-item d-block">
-        <div className="foto" onClick={() => {}}>
+        <div
+          className="foto"
+          onClick={() => {
+            dataRef.current = project;
+            setIsShowModal(true);
+          }}
+        >
           <div>
             <img
               src={project.images[0]}
               alt="projectImages"
               height="230"
-              style={{
-                marginBottom: 0,
-                paddingBottom: 0,
-                position: 'relative',
-              }}
+              className="position-relative mb-0 pb-0"
             />
             <span className="project-date">
               {project.startDate}
@@ -67,20 +99,17 @@ const Projects = () => {
   return (
     <section id="portfolio">
       <div className="col-md-12">
-        <h1
-          className="section-title"
-          style={{ color: 'black' }}
-        >
+        <h1 className="section-title text-black">
           <span>My Projects</span>
         </h1>
         <div className="col-md-12 mx-auto">
           <div className="row mx-auto">{projects}</div>
         </div>
-        {/* <ProjectDetailsModal
-          show={this.state.detailsModalShow}
-          onHide={detailsModalClose}
-          data={this.state.deps}
-        /> */}
+        <ProjectDetails
+          show={isShowModal}
+          onHide={closeModal}
+          data={dataRef}
+        />
       </div>
     </section>
   );
