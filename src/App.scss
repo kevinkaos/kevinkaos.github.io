@@ -93,7 +93,7 @@ html {
 
 #skills {
   background: #1f1f1f;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
 
   .skills-tile {
     background-color: transparentize(#f8f5f4, 0.95);
@@ -101,5 +101,28 @@ html {
     width: 100px;
     margin: 5px 0 5px 0;
     border-radius: 8px;
+  }
+}
+
+#footer {
+  background: #1f1f1f;
+  min-height: 100px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  color: white;
+  position: relative;
+  text-align: center;
+
+  .social-links {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+
+  a,
+  a:visited,
+  a:hover,
+  a:focus {
+    color: #fff;
   }
 }

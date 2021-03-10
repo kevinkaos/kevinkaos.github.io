@@ -3,6 +3,7 @@ import './App.scss';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Home />
       <About />
       <Skills />
+      <Footer />
     </div>
   );
 };
