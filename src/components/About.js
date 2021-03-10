@@ -27,7 +27,7 @@ const About = () => {
                   animation="cubeAnimation"
                   cssModule={[coreStyles, animationStyles]}
                 >
-                  {[0, 1, 2, 3, 4].map((i) => (
+                  {[...Array(5)].map((_, i) => (
                     <div
                       data-src={`img/my-pics/profile-pic-${i}.jpg`}
                       alt="Avatar placeholder"

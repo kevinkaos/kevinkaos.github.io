@@ -47,7 +47,7 @@ const ProjectDetails = ({
         onClick={() => onHide()}
         className="modal-close"
       >
-        <i className="fas fa-times fa-3x close-icon"></i>
+        <i className="fas fa-times fa-3x close-icon p-3"></i>
       </span>
       <div className="col-md-12">
         <div

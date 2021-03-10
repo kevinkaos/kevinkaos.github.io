@@ -55,6 +55,25 @@ const myProjects = {
         },
       ],
     },
+    {
+      title: 'Simple Todo App',
+      startDate: '2020',
+      description:
+        'Simple todo app with several features...to be added',
+      images: ['img/todo-app/0.png'],
+      url:
+        'https://kevinkaos.github.io/andro-video-homework/',
+      technologies: [
+        {
+          class: 'devicon-react-original-wordmark colored',
+          name: 'React',
+        },
+        {
+          class: 'devicon-materialui-plain colored',
+          name: 'Material UI',
+        },
+      ],
+    },
   ],
 };
 
