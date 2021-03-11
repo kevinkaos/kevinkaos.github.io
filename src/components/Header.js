@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
+import resume from '../assets/KevinKaoResume.pdf';
 
 const Header = () => {
   const [expand, updateExpanded] = useState(false);
@@ -76,6 +77,15 @@ const Header = () => {
               >
                 <i className="fab fa-codepen"></i>{' '}
                 Experiences
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                href={resume}
+                target="_blank"
+                onClick={() => updateExpanded(false)}
+              >
+                <i className="fas fa-download"></i> CV
               </Nav.Link>
             </Nav.Item>
           </Nav>

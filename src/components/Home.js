@@ -1,8 +1,6 @@
 import React from 'react';
 import '../styles/stars.scss';
 import Typical from 'react-typical';
-import Button from 'react-bootstrap/Button';
-import resume from '../assets/KevinKaoResume.pdf';
 
 const Home = () => {
   return (
@@ -32,10 +30,6 @@ const Home = () => {
             wrapper="h1"
             className="intro-titles mb-4"
           />
-          <Button href={resume} target="_blank">
-            <i className="fas fa-download">&nbsp;</i>
-            Download My CV
-          </Button>
         </div>
       </div>
     </div>
