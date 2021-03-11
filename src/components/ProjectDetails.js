@@ -1,16 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+import 'react-awesome-slider/dist/styles.css';
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
-import 'react-awesome-slider/dist/styles.css';
+import { PhotoSwipe } from 'react-photoswipe-2';
+import 'react-photoswipe-2/lib/photoswipe.css';
 
 const ProjectDetails = ({
   onHide,
   show,
   data: { current = [] },
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClose = () => setIsOpen(false);
+
+  useEffect(() => {
+    const escapeFunction = (e) => {
+      if (e.keyCode === 27) {
+        return setIsOpen(false);
+      }
+    };
+    document.addEventListener(
+      'keydown',
+      escapeFunction,
+      false
+    );
+
+    return () => {
+      document.removeEventListener(
+        'keydown',
+        escapeFunction,
+        false
+      );
+    };
+  }, []);
   const title = current?.title;
   const description = current?.description;
   const url = current?.url;
@@ -30,12 +55,31 @@ const ProjectDetails = ({
     );
   });
 
-  const img = current?.images?.map((elem, i) => {
-    return <div key={i} data-src={elem} />;
+  const img = current?.images?.map((elem) => {
+    return <div key={elem.src} data-src={elem.src} />;
+  });
+
+  const largeImgSwipe = current?.images?.map((el) => {
+    if (el.mobileView) {
+      return {
+        src: el.src,
+        w: 630,
+        h: 1352,
+        title: `Mobile View - ${el.title}`,
+      };
+    } else {
+      return {
+        src: el.src,
+        w: 1906,
+        h: 943,
+        title: `Desktop View - ${el.title}`,
+      };
+    }
   });
 
   return (
     <Modal
+      backdrop="static"
       show={show}
       onHide={() => onHide()}
       size="lg"
@@ -43,12 +87,22 @@ const ProjectDetails = ({
       centered
       className="modal-inside"
     >
-      <span
-        onClick={() => onHide()}
-        className="modal-close"
-      >
-        <i className="fas fa-times fa-3x close-icon p-3"></i>
-      </span>
+      <div className="d-flex">
+        <span
+          onClick={() => onHide()}
+          className="modal-close"
+          style={{ cursor: 'pointer' }}
+        >
+          <i className="fas fa-times fa-2x close-icon p-3"></i>
+        </span>
+        <span
+          onClick={() => setIsOpen(true)}
+          className="modal-close"
+          style={{ cursor: 'pointer' }}
+        >
+          <i className="fas fa-2x fa-search-plus p-3"></i>
+        </span>
+      </div>
       <div className="col-md-12">
         <div
           className="col-md-10 mx-auto"
@@ -70,6 +124,11 @@ const ProjectDetails = ({
               icon={faCircle}
             />
           </div>
+          <PhotoSwipe
+            items={largeImgSwipe}
+            isOpen={isOpen}
+            onClose={handleClose}
+          />
           <AwesomeSlider
             animation="cubeAnimation"
             className="slider-image"

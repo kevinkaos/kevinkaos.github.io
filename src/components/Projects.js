@@ -9,13 +9,41 @@ const myProjects = {
       description:
         'movie recommendations rwd design using Create react app',
       images: [
-        'img/movie-recommendations/0.png',
-        'img/movie-recommendations/1.png',
-        'img/movie-recommendations/2.png',
-        'img/movie-recommendations/3.png',
-        'img/movie-recommendations/4.png',
-        'img/movie-recommendations/5.png',
-        'img/movie-recommendations/6.png',
+        {
+          src: 'img/movie-recommendations/0.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/movie-recommendations/1.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/movie-recommendations/2.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/movie-recommendations/3.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/movie-recommendations/4.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/movie-recommendations/5.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/movie-recommendations/6.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
       ],
       url:
         'https://kkao-movie-recommendation.herokuapp.com/',
@@ -39,9 +67,21 @@ const myProjects = {
       startDate: '2019',
       description: 'movie finder app',
       images: [
-        'img/movie-finder/0.png',
-        'img/movie-finder/1.png',
-        'img/movie-finder/2.png',
+        {
+          src: 'img/movie-finder/0.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/movie-finder/1.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/movie-finder/2.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
       ],
       url: 'https://kkao-movie-finder.herokuapp.com/',
       technologies: [
@@ -60,7 +100,13 @@ const myProjects = {
       startDate: '2020',
       description:
         'Simple todo app with several features...to be added',
-      images: ['img/todo-app/0.png'],
+      images: [
+        {
+          src: 'img/todo-app/0.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
+      ],
       url:
         'https://kevinkaos.github.io/andro-video-homework/',
       technologies: [
@@ -98,7 +144,7 @@ const Projects = () => {
         >
           <div>
             <img
-              src={project.images[0]}
+              src={project.images[0].src}
               alt="projectImages"
               height="230"
               className="position-relative mb-0 pb-0"
