@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 const Header = () => {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const [navColor, updateNavbar] = useState(false);
 
   const scrollHandler = () => {
     if (window.scrollY >= 50) {
@@ -22,7 +22,7 @@ const Header = () => {
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? 'sticky' : 'navbar'}
+      className={navColor ? 'sticky' : 'navbar'}
     >
       <Container>
         <Navbar.Toggle
