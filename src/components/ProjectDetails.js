@@ -125,7 +125,7 @@ const ProjectDetails = ({
             />
           </div>
           <PhotoSwipe
-            items={largeImgSwipe}
+            items={largeImgSwipe || []}
             isOpen={isOpen}
             onClose={handleClose}
           />
