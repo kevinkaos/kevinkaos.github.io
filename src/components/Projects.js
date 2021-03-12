@@ -7,7 +7,7 @@ const myProjects = {
       title: 'Movie Recommendations',
       startDate: '2021',
       description:
-        'movie recommendations rwd design using Create react app',
+        'A responsive mobile compatible web application for browsing and searching for your favorite movies! Created with React Create-React-App, Redux, and React-Router. Styling was done with css pre-processor and Material UI Framework',
       images: [
         {
           src: 'img/movie-recommendations/0.png',
@@ -65,7 +65,8 @@ const myProjects = {
     {
       title: 'Movie Finder',
       startDate: '2019',
-      description: 'movie finder app',
+      description:
+        'My very first application made with TMDB API, this is the version 1 of Movie Recommendations app, uses react and redux',
       images: [
         {
           src: 'img/movie-finder/0.png',
@@ -99,7 +100,7 @@ const myProjects = {
       title: 'Simple Todo App',
       startDate: '2020',
       description:
-        'Simple todo app with several features...to be added',
+        'Simple todo app with several features...aside from the usual todo list features, I implemented a custom queue to deleting todo items, also includes a custom implemented sorting algorithm',
       images: [
         {
           src: 'img/todo-app/0.png',
@@ -107,8 +108,7 @@ const myProjects = {
           title: 'placeholder',
         },
       ],
-      url:
-        'https://kevinkaos.github.io/andro-video-homework/',
+      url: 'https://kevinkaos.github.io/simple-todo-app/',
       technologies: [
         {
           class: 'devicon-react-original-wordmark colored',
