@@ -83,12 +83,11 @@ const About = () => {
                 >
                   <br />
                   <span className="wave">
-                    Hi there &#128513; and welcome to my
-                    personal{' '}
+                    Hi there &#128513; and welcome to my{' '}
                     <u>
                       <i>Front-end web developer</i>
                     </u>{' '}
-                    portfolio!
+                    website!
                   </span>
                   <br />
                   <br />
