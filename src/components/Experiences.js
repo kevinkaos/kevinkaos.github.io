@@ -12,7 +12,9 @@ const allExperiences = {
       company: 'AndroVideo',
       title: 'Front-End Web Developer',
       years: '2020/07 - 2021/03',
-      mainTech: ['React'],
+      mainTech: ['React', 'NodeJS', 'SCSS'],
+      description:
+        'Implemented many features for dashboard for AI Camera, learned to debug root cause and fix based on scope of problem, maintained NodeJS backend that connected to Android camera database',
       className: 'fa-react',
       technologies: [
         'REST API',
@@ -30,6 +32,8 @@ const allExperiences = {
       title: 'Front-End Web Developer',
       years: '2020/03 - 2020/06',
       mainTech: ['Vue'],
+      description:
+        'Learned to work in-depth with chrome dev tools and mainly worked on pixel perfect recreation of UIUX designs, used Vue as the main framework',
       className: 'fa-vuejs',
       technologies: [
         'JavaScript',
@@ -44,12 +48,15 @@ const allExperiences = {
       title: 'Front-End Web Developer',
       years: '2019/11 - 2020/03',
       mainTech: ['React'],
+      description:
+        'First job as a web developer, made React Native mobile application for client with functionality like scanning and submitting data to client database, learned to work with REST API',
       className: 'fa-react',
       technologies: [
         'JavaScript',
         'React',
         'React Native',
         'Material UI',
+        'REST API',
         'GraphQL',
       ],
     },
@@ -122,6 +129,7 @@ const Experiences = () => {
         >
           {work.company}
         </h4>
+        <p>{work.description}</p>
         <div
           style={{ textAlign: 'left', marginTop: '15px' }}
         >
