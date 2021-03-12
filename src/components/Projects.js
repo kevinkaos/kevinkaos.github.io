@@ -63,6 +63,30 @@ const myProjects = {
       ],
     },
     {
+      title: 'Simple Todo App',
+      startDate: '2020',
+      description:
+        'Simple todo app with several features...aside from the usual todo list features, I implemented a custom queue to deleting todo items, also includes a custom implemented sorting algorithm',
+      images: [
+        {
+          src: 'img/todo-app/0.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
+      ],
+      url: 'https://kevinkaos.github.io/simple-todo-app/',
+      technologies: [
+        {
+          class: 'devicon-react-original-wordmark colored',
+          name: 'React',
+        },
+        {
+          class: 'devicon-materialui-plain colored',
+          name: 'Material UI',
+        },
+      ],
+    },
+    {
       title: 'Movie Finder',
       startDate: '2019',
       description:
@@ -93,30 +117,6 @@ const myProjects = {
         {
           class: 'devicon-redux-original colored',
           name: 'Redux',
-        },
-      ],
-    },
-    {
-      title: 'Simple Todo App',
-      startDate: '2020',
-      description:
-        'Simple todo app with several features...aside from the usual todo list features, I implemented a custom queue to deleting todo items, also includes a custom implemented sorting algorithm',
-      images: [
-        {
-          src: 'img/todo-app/0.png',
-          mobileView: false,
-          title: 'placeholder',
-        },
-      ],
-      url: 'https://kevinkaos.github.io/simple-todo-app/',
-      technologies: [
-        {
-          class: 'devicon-react-original-wordmark colored',
-          name: 'React',
-        },
-        {
-          class: 'devicon-materialui-plain colored',
-          name: 'Material UI',
         },
       ],
     },
