@@ -82,21 +82,68 @@ const About = () => {
                   }}
                 >
                   <br />
-                  <span className="wave">Hi!!</span>
+                  <span className="wave">
+                    Hi there &#128513; and welcome to my
+                    personal{' '}
+                    <u>
+                      <i>Front-end web developer</i>
+                    </u>{' '}
+                    portfolio!
+                  </span>
                   <br />
                   <br />
-                  Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Dicta qui saepe alias
-                  non vel autem quis, inventore at culpa
-                  adipisci. Neque quia fugit porro
-                  exercitationem molestias minima animi eos
-                  ea?Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Voluptatem consequatur
-                  perferendis voluptatum fugiat tenetur
-                  animi sint laborum maiores sunt aliquid
-                  sit inventore similique, aspernatur vel
-                  facilis quasi dolores reprehenderit
-                  mollitia.
+                  People find me to be a <b>hard working</b>
+                  , <b>self-motivated</b> and{' '}
+                  <b>self-directed learner</b> with
+                  excellent <b>communication</b> and{' '}
+                  <b>coding</b> skills. For the past couple
+                  years I have worked in a few tech start
+                  ups as a <b>Front-end web developer</b>.
+                  My experience includes working on product
+                  setting <b>dashboards</b>, developing
+                  React Native <b>mobile</b> apps, making{' '}
+                  <b>responsive</b> React web applications
+                  all while using different{' '}
+                  <b>frameworks</b> and libraries for
+                  styling, not to mention{' '}
+                  <b>
+                    Continuous Integration / Continuous
+                    Delivery
+                  </b>{' '}
+                  with <b>Gitlab</b> and version control
+                  with <b>Git CLI</b>. My experience
+                  includes a couple different tech stacks,
+                  utilizing <b>REST API</b> as well as{' '}
+                  <b>GraphQL</b>, also many different UI
+                  frameworks and the ability to maintain{' '}
+                  <b>NodeJS</b> backend. I have a track
+                  record of <i>developing</i>,{' '}
+                  <i>maintaining</i> and <i>debugging</i>{' '}
+                  well thought out and thorough
+                  applications, and I can do the same for
+                  your company.
+                  <br />
+                  <br />I am a dedicated software engineer.
+                  I enjoy reading about related articles,
+                  and the knowledge and perspective that my
+                  reading gives me has strengthened my
+                  understanding of project architecture and
+                  structure which in turn helps me debug and
+                  write better applications. I have been
+                  successful at self-directed learning, and
+                  I attribute this success to my ability to
+                  for the intense craving for more
+                  knowledge, discipline, focus and the
+                  desire to become better at my craft. These
+                  traits will help me in my career where
+                  learning is on-going and there will never
+                  be a finish line. In other words,{' '}
+                  <i>
+                    <u>
+                      I really enjoy the journey of being a
+                      software engineer.
+                    </u>
+                  </i>
                 </div>
               </div>
             </div>
