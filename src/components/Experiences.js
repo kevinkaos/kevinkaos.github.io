@@ -14,7 +14,7 @@ const allExperiences = {
       years: '2020/07 - 2021/03',
       mainTech: ['React', 'NodeJS', 'SCSS'],
       description:
-        'Implemented many features for dashboard for AI Camera, learned to debug root cause and fix based on scope of problem, maintained NodeJS backend that connected to Android camera database',
+        'Implemented many features for dashboard for AI Camera, learned to debug root cause and fix based on scope of problem, maintained NodeJS backend that connected to Android camera database, worked with GIT submodules and in-depth GIT CLI, used GitLab for CI/CD.',
       className: 'fa-react',
       technologies: [
         'REST API',
