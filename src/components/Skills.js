@@ -47,6 +47,14 @@ const skillsList = {
         name: 'Firebase',
         class: 'devicon-firebase-plain-wordmark colored',
       },
+      {
+        name: 'Express',
+        class: 'devicon-express-original-wordmark colored',
+      },
+      {
+        name: 'MongoDB',
+        class: 'devicon-mongodb-plain-wordmark colored',
+      },
     ],
   },
 };
