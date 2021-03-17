@@ -63,6 +63,48 @@ const myProjects = {
       ],
     },
     {
+      title: 'Chat Application',
+      startDate: '2021',
+      description:
+        'Made with Scss, React using Hooks, Redux and React Router on the Front-end, used Firebase for cloud backend and real-time database',
+      images: [
+        {
+          src: 'img/chat-app/0.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/chat-app/1.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/chat-app/2.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
+      ],
+      url: 'https://chat-app-92e40.web.app/',
+      technologies: [
+        {
+          class: 'devicon-react-original-wordmark colored',
+          name: 'React',
+        },
+        {
+          class: 'devicon-redux-original colored',
+          name: 'Redux',
+        },
+        {
+          class: 'devicon-sass-original colored',
+          name: 'Sass',
+        },
+        {
+          class: 'devicon-firebase-plain-wordmark colored',
+          name: 'Firebase',
+        },
+      ],
+    },
+    {
       title: 'Simple Todo App',
       startDate: '2020',
       description:

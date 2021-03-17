@@ -43,6 +43,10 @@ const skillsList = {
         name: 'Vue',
         class: 'devicon-vuejs-plain-wordmark colored',
       },
+      {
+        name: 'Firebase',
+        class: 'devicon-firebase-plain-wordmark colored',
+      },
     ],
   },
 };
