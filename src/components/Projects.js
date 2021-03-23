@@ -4,6 +4,70 @@ import ProjectDetails from './ProjectDetails';
 const myProjects = {
   projects: [
     {
+      title: 'Bar Ordering for Employees',
+      startDate: '2021',
+      description:
+        'A simple POS system to order drinks and make reservations for employees of a bar to use, with custom backend to modify product selections. Made with strapi headless CMS and, React.',
+      images: [
+        {
+          src: 'img/bar-ordering/0.png',
+          mobileView: false,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/bar-ordering/1.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/bar-ordering/2.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/bar-ordering/3.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/bar-ordering/4.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/bar-ordering/5.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/bar-ordering/7.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/bar-ordering/8.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+        {
+          src: 'img/bar-ordering/9.png',
+          mobileView: true,
+          title: 'placeholder',
+        },
+      ],
+      url: 'https://bar-ordering.netlify.app/',
+      technologies: [
+        {
+          class: 'devicon-react-original-wordmark colored',
+          name: 'React',
+        },
+        {
+          class: 'devicon-sass-original colored',
+          name: 'Sass',
+        },
+      ],
+    },
+    {
       title: 'Movie Recommendations',
       startDate: '2021',
       description:
