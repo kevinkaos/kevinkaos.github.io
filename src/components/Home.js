@@ -26,7 +26,7 @@ const Home = () => {
           <br />
           <h1 className="intro-name mt-4">Kevin Kao</h1>
           <Typical
-            steps={['Front-End Web Developer']}
+            steps={['Web Developer']}
             wrapper="h1"
             className="intro-titles mb-4"
           />

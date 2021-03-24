@@ -43,11 +43,15 @@ const About = () => {
                   />
                   <i
                     style={{ fontSize: '3.5rem' }}
-                    className="devicon-redux-original colored"
+                    className="devicon-mongodb-plain-wordmark colored"
                   ></i>
                   <i
                     style={{ fontSize: '4.5rem' }}
                     className="devicon-nodejs-plain-wordmark colored"
+                  ></i>
+                  <i
+                    style={{ fontSize: '3.5rem' }}
+                    className="devicon-express-original-wordmark colored"
                   ></i>
                 </div>
               </span>
@@ -85,7 +89,7 @@ const About = () => {
                   <span className="wave">
                     Hi there &#128513; and welcome to my{' '}
                     <u>
-                      <i>Front-end web developer</i>
+                      <i>Web developer</i>
                     </u>{' '}
                     website!
                   </span>
@@ -97,8 +101,8 @@ const About = () => {
                   excellent <b>communication</b> and{' '}
                   <b>coding</b> skills. For the past couple
                   years I have worked in a few tech start
-                  ups as a <b>Front-end web developer</b>.
-                  My experience includes working on product
+                  ups as a <b>Web developer</b>. My
+                  experience includes working on product
                   setting <b>dashboards</b>, developing
                   React Native <b>mobile</b> apps, making{' '}
                   <b>responsive</b> React web applications
