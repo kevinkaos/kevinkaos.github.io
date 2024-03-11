@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import resume from '../assets/KevinKaoResume.pdf';
+import resume from '../assets/KevinKaoResume.docx';
 
 const Header = () => {
   const [expand, updateExpanded] = useState(false);
